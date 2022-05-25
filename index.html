@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Embedded Courses</title>
+</head>
+
+<body onscroll="check()">
+    <div class="flexNav" style="margin:0px ;">
+        <a onclick="dispSignUp()" style="cursor: pointer">Sign Up</a>
+        <a onclick="dispSignIn()" style="cursor: pointer">Sign in</a>
+        <a href="#who">About us</a>
+        <a href="#num">Numbers</a>
+        <a href="#crs">Services</a>
+        <a href="#con">Contact us</a>
+    </div>
+    <div class="bg1" style="margin: 0px;">
+        <h1>Welcome to the greatest place to learn in!</h1>
+        <p>Here you can achieve your dreams</p>
+    </div>
+    <div class="who" id="who">
+        <p>Who are we?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore eum ipsum non vel qui provident id,
+            cum obcaecati. Velit deleniti soluta dolorem quia odio, enim odit modi ex. Vero!Loreml Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit. Maiores, non? Fugiat possimus facilis modi eligendi aspernatur
+            accusamus, perspiciatis aliquam in eveniet inventore quia excepturi aperiam optio aut, soluta ad delectus?
+        </p>
+    </div>
+    <div class="bg2">
+        <p>Here you can find a company with who shares your interest!</p>
+    </div>
+    <div class="num" id="num">
+        <p>What we achieved in one year:</p>
+        <div class="flexNum">
+            <span>
+                <p class="inc" data-goal="80">0</p>
+                <p class="word">Graduates</p>
+            </span>
+            <span>
+                <p class="inc" data-goal="25">0</p>
+                <p class="word">Multinational-employees</p>
+            </span>
+            <span>
+                <p class="inc" data-goal="100">0</p>
+                <p class="word">Hours</p>
+            </span>
+            <span>
+                <p class="inc" data-goal="20">0</p>
+                <p class="word">Grad projects</p>
+            </span>
+        </div>
+    </div>
+    <div class="crs">
+        <h3>Embedded system course:</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem nulla cumque hic quas accusamus doloribus
+            voluptatem quia iusto praesentium maiores explicabo fugit aut animi reprehenderit sequi ut error,
+            necessitatibus vero?</p>
+        <a href="Course.html">Course Content</a>
+        <a href="mailto:shady3amalkwy@gmail.com">For more info</a>
+    </div>
+    <div class="cover" onclick="check()"></div>
+    <div class="bg3">
+        <p>Begin this journey to reach what you want</p>
+    </div>
+    <div class="serv" id="crs">
+        <p>We provide you a list of courses with a very high quality:</p>
+        <table>
+            <tr>
+                <button onclick="showCourse()">Embedded course</button>
+                <button onclick="showCourse()">Embedded course</button>
+            </tr>
+            <tr>
+                <button onclick="showCourse()">Embedded course</button>
+                <button onclick="showCourse()">Embedded course</button>
+            </tr>
+        </table>
+    </div>
+    <div class="cont">
+        <p>Contact Us</p>
+        <div class="flexCon" id="con">
+            <form action="javascript:void(0);" onsubmit="resp()" class="fff">
+                <legend>Send us your message</legend>
+                <fieldset>
+                    <input type="text" name="" id="tx" placeholder="Name" required>
+                    <input type="email" name="" id="em" placeholder="Email address" required>
+                    <textarea name="" id="msg" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <input type="submit" name="" id="">
+                    <p id="when">We will respond ASAP</p>
+                </fieldset>
+            </form>
+            <div class="sss">
+                <p style="text-align:center">Our social media</p>
+                <ul>
+                    <li><a href=""><img src="Resources/favfac.png" alt=""></a></li>
+                    <li><a href=""><img src="Resources/favwha.png" alt=""></a></li>
+                    <li><a href=""><img src="Resources/youfav.png" width="48px" height="48px" alt=""></a></li>
+                    <li><a href=""><img src="Resources/tele.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <form class="signup" id="su" action="Thanks.html" onsubmit="return vali()">
+        <h2>Sign up</h2>
+        <p class="ins">Please fill in the form to create account!</p>
+        <hr>
+        <input type="text" placeholder="First name" name="fname" required><input type="text" placeholder="Last name" name="lname" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="pass" required>
+        <input type="password" placeholder="Confirm password" name="passCon" required>
+        <input type="tel" placeholder="Phone number" name="phone" required>
+        <input type="text" placeholder="Address" name="add" required>
+        <div class="Tyge"><label for="lis">Gender: </label><select name="" id="lis">
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+            </select></div>
+        <div class="Tyge"><label for="liss">Who are you? </label><select name="" id="liss">
+                <option value="std">Student</option>
+                <option value="tchr">Teacher</option>
+            </select></div>
+        <input type="submit" value="Sign Up">
+    </form>
+    <form class="signin" id="si" action="" onsubmit="dis()">
+        <h2>Sign in</h2>
+        <p class="ins">Please fill in to enter!</p>
+        <hr>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <div class="Tyge"><label for="lis2">Who are you? </label><select name="cat" id="lis2">
+                <option value="std">Student</option>
+                <option value="tch">Teacher</option>
+            </select></div>
+        <input type="submit" value="Sign In">
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

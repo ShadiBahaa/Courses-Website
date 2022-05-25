@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+}
+body,html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    display: block;
+    scroll-behavior: smooth;
+}
+.flexNav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+.flexNav a{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #7395AE;
+    flex-basis: calc(100%/6);
+    height: 9vh;
+    line-height: 9vh;
+    border-right: 2px solid black;
+    font-size: 3vw;
+    color: #5D5C61;
+    text-decoration: none;
+}
+.flexNav a:hover{
+    background-color: cadetblue;
+}
+.flexNav a:last-child{
+    border: none;
+}
+.bg1,.bg2,.bg3{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.5;
+}
+.bg1{
+    background-image: url("Resources/emb.jpg");
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 4vh;
+    padding: 0px;
+    position: relative;
+}
+.bg1 p{
+    position: absolute;
+    font-size: 5vw;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.des,.sch{
+    font-size: 3vw;
+    text-align: center;
+    padding: 2%;
+    line-height: 1;
+}
+.obj{
+    font-size: 3vw;
+    padding: 2%;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.reg{
+    font-size: 3vw;
+    padding: 2%;
+    line-height: 1;
+}
+.des p:first-child,.obj p:first-child,.reg p:first-child{
+    margin-top: 4vh;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+.obj img {
+    float: right;
+    padding: 0 0 5px 5px;
+    height: 40vw;
+    width: 35vw;
+    /* margin-top: 1%; */
+    margin-left: 2%;
+}
+table{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid black;
+    padding: 2%;
+}
+caption{
+    margin-top: 4vh;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+.reg ol{
+    margin-left: 2%;
+}
+.cont{
+    min-height: fit-content;
+    background-image: url("Resources/cnt.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    font-size: 3vw;
+    text-align: center;
+    padding: 2%;
+    line-height: 1;
+}
+.cont p{
+    margin-top: 4vh;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+.flexCon{
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#when{
+    display: none;
+    font-size: 3vh;
+    font-weight: normal;
+}
+form{
+    display: block;
+    height: fit-content;
+}
+legend{
+    font-size: 3vh;
+}
+legend{
+    margin-bottom: 2%;
+}
+::placeholder{
+    font-size: 3vh;
+}
+input,textarea{
+    display: block;
+    margin-top: 4%;
+    padding: 2%;
+}
+.sss ul{
+    width: fit-content;
+    clear: both;
+    list-style-type: none;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 0px;
+}

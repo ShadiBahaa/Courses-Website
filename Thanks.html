@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Thanks.css">
+    <title>Embedded Courses</title>
+</head>
+<body onscroll="check()">
+    <div class="flexNav" style="margin:0px ;">
+        <a href="index.html">Home</a>
+        <a onclick="dispSignIn()" style="cursor: pointer">Sign in</a>
+        <a href="#con">Contact us</a>
+    </div>
+    <div class="bg1" style="margin: 0px;">
+    </div>
+    <div class="cont">
+        <p>Contact Us</p>
+        <div class="flexCon" id="con">
+            <form action="javascript:void(0);" onsubmit="resp()" class="fff">
+                <legend>Send us your message</legend>
+                <fieldset>
+                    <input type="text" name="" id="tx" placeholder="Name" required>
+                    <input type="email" name="" id="em" placeholder="Email address" required>
+                    <textarea name="" id="msg" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <input type="submit" name="" id="">
+                    <p id="when">We will respond ASAP</p>
+                </fieldset>
+            </form>
+            <div class="sss">
+                <p style="text-align:center">Our social media</p>
+                <ul>
+                    <li><a href=""><img src="Resources/favfac.png" alt=""></a></li>
+                    <li><a href=""><img src="Resources/favwha.png" alt=""></a></li>
+                    <li><a href=""><img src="Resources/youfav.png" width="48px" height="48px" alt=""></a></li>
+                    <li><a href=""><img src="Resources/tele.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <form class="signin" id="si" action="" onsubmit="dis()">
+        <h2>Sign in</h2>
+        <p class="ins">Please fill in to enter!</p>
+        <hr>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <div class="Tyge"><label for="lis2">Who are you? </label><select name="cat" id="lis2">
+                <option value="std">Student</option>
+                <option value="tch">Teacher</option>
+            </select></div>
+        <input type="submit" value="Sign In">
+    </form>
+    <div class="cover" onclick="check()"></div>
+    <script src="Thanks.js"></script>
+</body>
+</html>
