@@ -1,0 +1,17 @@
+The project consists of 5 pages:
+1- index.html represents the home page.
+2- Course.html represents the course details page. You can reach it from services buttons in the home page.
+3- Student.html represents the student account. You can reach it by choosing sign in and selecting student from “Who are you” and then submitting the form.
+4- Teacher.html represents the teacher account. You can reach it by choosing sign in and selecting teacher from “Who are you” and then submitting the form.
+5- Thanks.html represents the page that appears after creating account. You can reach by submitting the sign up form.
+
+Project chekclist:
+1- Topic: education
+2- 5 pages only
+3- All syllabus are used
+4- Same theme
+5- Text, images and paragraphs are used
+6- Website is not empty
+7- smooth accessing. links, menus, tables, image galley and navigation bar are implemented
+8- Mobile friendly
+9- Sign up form achieves all required validations and its action is specified.
